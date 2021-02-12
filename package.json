@@ -68,7 +68,7 @@
     "@semantic-release/git"
   ],
   "files": [
-    "dist"
+    "build"
   ],
-  "main": "dist/index.js"
+  "main": "build/main.**.chunk.js"
 }
