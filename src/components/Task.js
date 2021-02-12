@@ -18,9 +18,9 @@ export default function Task({
 
       <div className="actions" onClick={event => event.stopPropagation()}>
         {state !== 'TASK_ARCHIVED' && (
-          <a onClick={() => onPinTask(id)}>
+          <button className="button-star" onClick={() => onPinTask(id)}>
             <span className="icon-star" />
-          </a>
+          </button>
         )}
       </div>
     </div>

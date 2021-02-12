@@ -1012,3 +1012,6 @@
    vertical-align: top;
    max-width: 100%;
  }
+ .button-star {
+   background-color: transparent;
+ }
