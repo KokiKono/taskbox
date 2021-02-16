@@ -1,14 +1,14 @@
 {
   "name": "@filipigustavo/intro-storybook-react-template",
-  "version": "0.1.0",
-  "description": "Starter template to get up and running quickly with React and Storybook",
-  "author": "Chromatic <https://chromatic.com/>",
+  "version": "0.2.0",
+  "description": "Test made with React and Storybook",
+  "author": "Filipi Gustavo <https://filipigustavo.com.br/>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chromaui/intro-storybook-react-template"
+    "url": "https://github.com/filipigustavo/taskbox"
   },
   "bugs": {
-    "url": "https://github.com/chromaui/intro-storybook-react-template/issues"
+    "url": "https://github.com/filipigustavo/taskbox/issues"
   },
   "license": "MIT",
   "dependencies": {
@@ -28,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "build:npm": "rm -rf dist && NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore stories.js"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +50,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.16",
+    "@babel/core": "^7.12.16",
     "@storybook/addon-actions": "^6.1.17",
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/addon-links": "^6.1.17",
@@ -68,7 +71,8 @@
     "@semantic-release/git"
   ],
   "files": [
-    "build"
+    "dist",
+    "README.md"
   ],
-  "main": "build/main.**.chunk.js"
+  "main": "dist/index.js"
 }
