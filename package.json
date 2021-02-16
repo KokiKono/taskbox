@@ -28,7 +28,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "build": "rm -rf dist && NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore stories.js"
+    "build": "rm -rf dist && babel src/components --out-dir dist --copy-files --ignore stories.js"
   },
   "eslintConfig": {
     "extends": [
